@@ -2,7 +2,12 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: my-webapp
+  labels:
+    app: my-webapp
 spec:
   containers:
     - name: my-webapp
-      image: rajendrait99/web:latest
+      image: anaghavashista/myapp:v1
+      ports:
+        - containerPort: 8080
+  restartPolicy: Always

@@ -10,4 +10,4 @@ spec:
       nodePort: 31090
       protocol: TCP
   selector:
-    app: "my-exporter"
+    app: my-webapp
